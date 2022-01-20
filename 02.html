@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Questão 2 - Trabalho 03 </title>
+
+    <style>
+
+        .title {
+            background-color:yellow;
+            width: 700px;
+        }
+        .title2 {
+            background-color:rgb(218, 165, 32);
+            width: 700px;
+        }
+        textarea {
+            resize: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="title">
+        <font> <b> SISTEMA DE GESTÃO ACADÊMICA </b> </font>
+    </div>
+    <div class="title2">
+        <font> <b> MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO </b> </font>
+    </div>
+    <br>
+
+<form>
+
+    <label for="login"><b>Login</b></label>
+    <input style="margin-bottom: 5px; margin-left: 200px;" type="text">
+
+    <br>
+
+    <label for="senha"> <b> Senha </b> </label>
+    <input style="margin-bottom: 5px; margin-left: 198px;" type="password">
+
+    <br>
+
+    <label for="status"> <b> Status </b> </label>
+    <select name="status" style="margin-bottom: 5px; margin-left: 197px;">
+        <option selected> Inativo: </option>
+        <option> A </option>
+        <option> B </option>
+        <option> C </option>
+    </select>
+
+    <br>
+
+        <label for="tipo"> <b> Tipo </b> </label>
+            <label style="margin-bottom: 5px; margin-left: 200px;">
+                <input type="radio" name="tipocadastro"> Técnico
+            </label>
+            <label>
+                <input type="radio" name="tipocadastro"> Professor
+            </label>
+            <label>
+                <input type="radio" name="tipocadastro"> Aluno
+            </label>
+    
+    <br>
+
+    <label for="datacriacao"> <b> Data de Criação </b> </label>
+    <input style="margin-bottom: 5px; margin-left: 130px;" type="text">
+
+    <br>
+
+        <label for="perfil"> <b> Perfil </b> </label>
+            <label style="margin-bottom: 5px; margin-left: 200px;">
+                <input type="radio" name="perfilpessoa"> Convidado
+            </label>
+            <label>
+                 <input type="radio" name="perfilpessoa"> Administrador
+            </label>
+
+    <br>
+
+    <label for="Observacoes" style="position: absolute; top: 260px;"> <b> Observações </b> </label>
+        <textarea name="comentario" maxlength="2000" style="height: 100px ; overflow-y: scroll;
+        width: 300px; margin-bottom: 5px; margin-left: 240px;">
+        </textarea>
+
+    <br>
+
+    <label for="modulos"style="position: absolute; top: 350px;" > <b> Módulos </b> </label>
+            <label style="margin-bottom: 5px; margin-left: 235px;">
+                <input type="checkbox" name="compras"> Compras
+            </label>
+
+            <label>
+                <input type="checkbox" name="biblioteca"> Biblioteca
+            </label>
+
+            <label>
+                <input type="checkbox" name="academico"> Acadêmico
+            </label>
+
+            <br><br>
+
+            <label style="margin-bottom: 5px; margin-left: 240px;">
+                <input type="checkbox" name="document"> Documentação
+            </label>
+
+            <label>
+                <input type="checkbox" name="rechumanos"> Recursos Humanos
+            </label>
+
+    <br><br>
+
+    <button type="submit"> Cadastrar </button>
+    <button type="reset"> Excluir </button>
+</form>
+</body>
+</html>
